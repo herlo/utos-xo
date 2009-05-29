@@ -1,0 +1,136 @@
+At the Utah OLPC meeting my son and I volunteered (were volunteered?) to cover 
+4.N.12 in the curriculum, which is addition of up to five-digit numbers and 
+multiplication of up to three digits by two digits.
+
+This note is intended as both an update on our progress, and a request for 
+comments.  All suggestions/corrections/flames are welcome.
+
+Not satisfied with my own ability to effectively teach fourth grade math, I 
+enlisted the aid of my son's (fifth-grade) teacher, Mrs. Woody (copied on 
+this e-mail), and she pulled in a few other third and fourth grade teachers.  
+I asked them how they teach multiplication, and we brainstormed a bit on how 
+we can effectively translate those techniques to software.
+
+By the way... I *highly* (highly!) recommend that anyone working on the 4th 
+grade math project find a local teacher who has experience teaching the 
+concepts to children.  Particularly with simple math, knowing how to do it is 
+*very* different from knowing how to teach it.
+
+Some of the constraints that we think we're working under are:
+
+1.  We are providing only a piece of software, and we can't know exactly what 
+explanations will accompany it.  So, ideally, it would be good if the student 
+could learn to do multiplication ONLY given the operation of the software.  
+This is a didactic activity not a practice activity.
+
+2.  Any textual or verbal explanations provided by the activity will have to 
+be translated for every country that will use it.  So it makes sense to 
+minimize the use of text and speech, and to teach the process as much as 
+possible with numbers, arrows, and animations.  I do want to use audio cues 
+for emphasis, but those don't need to be verbal.
+
+3.  XO storage capacity is limited, so extensive imagery and audio files are a 
+bad idea (and outside of my skill set to produce in any case).
+
+Within those constraints, though, we think there is a lot that can be done 
+with animation and simple sound effects.
+
+One of the points that the teachers emphasized is the importance of teaching 
+children not only the mechanical process of long multiplication, but also the 
+importance of place values, and their role in why the process works.  To that 
+end, they recommended teaching long multiplication by "pulling apart" the 
+steps.
+
+For example, given the problem 284 x 48, that problem can be broken down into 
+two sub-problems: 248 x 8 and 248 x 40, the results of which must be summed.
+
+Visually, we think we want to present the whole problem on the left-hand side 
+of the screen and then pull it apart with an animation by having the 
+constituent sub-problems "fly" to the right side of the screen, leaving the 
+whole problem in place.
+
+Each sub-problem will then be worked separately, and as each result is 
+completed, it will "fly" over to slot into place under the whole problem.  
+Finally, the addition will be performed.
+
+Animation will also be applied to carries.  A digit-pair multiplication will 
+be performed by the student and the result written in its place underneath 
+the multiplicands, and then the carry digit will "fly" up to its place.
+
+For example, after the multiplication of 5 x 5, we'd have:
+
+ 85
+x 5
+---
+ 25
+
+And then the '2' would fly around, shrink a bit and settle above the '8' in 
+the carry location.
+
+The teachers also suggested an incremental teaching process, whereby the 
+computer does more of the work at first, eventually leading to the child 
+doing the problem entirely without help.  We envision this proceeding 
+according to the following steps:
+
+1.  Fly-apart demonstration mode, no carries.  This might be used by a teacher 
+to demonstrate the process, without student or interaction, or by a 
+student "self-teaching".  At this first level, the problems would have no 
+carries.  The computer would perform all of the animations, step by step with 
+the click of a "next" button, and it would break the problem apart as 
+described above.
+
+2.  Fly-apart handhold mode, no carries.  The computer walks the student 
+through each step of the process, visually highlighting, for example, pairs 
+of digits to be multiplied or added and prompting the student to enter the 
+answer.  Still no carries.
+
+3.  Fly-apart corrective mode, no carries.  The student performs all of the 
+steps in order, and the computer indicates whenever the student makes a 
+mistake, not allowing the student to proceed in an incorrect manner.
+
+4.  Fly-apart demonstration mode, with carries.
+
+5.  Fly-apart handhold mode, with carries.
+
+6.  Fly-apart corrective mode, with carries.
+
+7.  Normal demonstration mode, with carries.  In this mode we would start 
+the "normal" long multiplication process, performing it in place rather than 
+separating out the sub-problems.
+
+8.  Normal handhold mode, with carries.
+
+9.  Normal corrective mode, with carries.
+
+10. Drill and practice mode.  Just like normal corrective mode, but without 
+the corrections, just a correctness indicator after the problem is complete.
+
+11. Test mode.  The student answers a series of problems and receives a score 
+at the end.
+
+In the above sequence, each demonstration mode would normally occur only once, 
+followed by a handhold mode 2-3 times, followed by a corrective mode repeated 
+until the child does it without making process errors.
+
+There is probably value in having the demonstration modes be "shareable", so 
+that a whole class can watch a demonstration, but we're not sure we see 
+collaborative value in any of the rest of it.  I'd think all problems worked 
+and the results should probably be logged to the journal.
+
+Those are our current thoughts on multiplication.  Addition is similar, but 
+simpler, with fly-apart and animated carries.  And, obviously, long addition 
+must be mastered before long multiplication is attempted.
+
+Any comments?  Are we overthinking this?  Any other ideas about how 
+collaboration might be usefully incorporated?
+
+Thanks,
+
+        Shawn and Ethan
+
+
+
+P.S. from Shawn: This project will probably take many months to complete.  
+Ethan, my 11 year-old son will be doing nearly all of the programming, under 
+my close guidance.  He's just learning to program, so it will proceed slowly, 
+especially at first.
